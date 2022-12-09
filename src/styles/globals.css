@@ -1,0 +1,22 @@
+/* This makes css styles to use @apply in themselves */
+@tailwind components;
+/* You don't need this one really but just to know this exists */
+@tailwind utilities;
+
+/* Global Styles */
+body {
+	@apply m-0;
+}
+
+* {
+	@apply m-0 p-0 box-border;
+}
+
+ul {
+	@apply list-none;
+}
+
+img {
+	@apply w-full object-cover;
+}
+/* End of Global Styles */
