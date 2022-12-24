@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- 🎉 feat: made it all
 - 🎉 feat: connection to ws server added
 
 <!-- ## [0.0.2] - 2022-12-07

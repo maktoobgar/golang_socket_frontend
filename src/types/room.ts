@@ -1,5 +1,5 @@
 export default interface Room {
 	id: number;
 	name: string;
-	connections_length: number;
+	connection_length: number;
 }
