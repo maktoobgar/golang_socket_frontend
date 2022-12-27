@@ -2,8 +2,19 @@
 
 ## [Unreleased]
 
-- 🎉 feat: made it all
-- 🎉 feat: connection to ws server added
+
+## [1.0.1] - 2022-12-27
+
+### Added
+
+- added docker compose and nginx configs to host frontend
+
+## [1.0.0] - 2022-12-25
+
+### Added
+
+- made all functional pages
+- connection to ws server added
 
 <!-- ## [0.0.2] - 2022-12-07
 
@@ -31,6 +42,6 @@
 [semantic versioning]: https://semver.org/spec/v2.0.0.html -->
 
 <!-- Versions -->
-<!-- [unreleased]: https://github.com/Author/Repository/compare/v0.0.2...HEAD
-[0.0.2]: https://github.com/Author/Repository/compare/v0.0.1...v0.0.2
-[0.0.1]: https://github.com/Author/Repository/releases/tag/v0.0.1 -->
+[unreleased]: https://github.com/maktoobgar/golang_socket_frontend/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/maktoobgar/golang_socket_frontend/compare/v1.0.1...v1.0.0
+[1.0.0]: https://github.com/maktoobgar/golang_socket_frontend/releases/tag/v1.0.0

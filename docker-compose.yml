@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  frontend:
+    container_name: task_manager_frontend
+    image: nginx:alpine
+    restart: always
+    volumes:
+      - ./configs:/etc/nginx/conf.d
+      - ./out:/project
+    ports:
+      - 3005:80

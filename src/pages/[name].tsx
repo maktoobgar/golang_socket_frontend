@@ -165,7 +165,7 @@ export default function Chat() {
 						} ${!onOffSideMenu && window.innerWidth > 768 && "!fixed"}`}
 					>
 						<Button
-							className="rounded-full h-16 ml-2 mt-2 mb-2"
+							className="!rounded-full !h-16 !ml-2 !mt-2 !mb-2"
 							onClick={() => setOnOffSideMenu((prev) => !prev)}
 						>
 							<MenuIcon />
@@ -191,13 +191,13 @@ export default function Chat() {
 							)}
 						</List>
 						<Button
-							className="absolute bottom-2 left-2 rounded-full bg-slate-300"
+							className="!absolute !bottom-2 !left-2 !rounded-full !bg-slate-300"
 							onClick={() => refetch()}
 						>
 							<RefreshIcon />
 						</Button>
 						<Button
-							className="absolute bottom-2 right-2 rounded-full bg-slate-300"
+							className="!absolute !bottom-2 !right-2 !rounded-full !bg-slate-300"
 							onClick={() => setShowAddRoom(true)}
 						>
 							<AddIcon />
@@ -207,7 +207,7 @@ export default function Chat() {
 					<div className="w-full bg-gray-200">
 						<div className="h-full flex flex-col">
 							<Button
-								className="rounded-full h-16 fixed left-2 top-2"
+								className="!rounded-full !h-16 !fixed !left-2 !top-2"
 								onClick={() => setOnOffSideMenu((prev) => !prev)}
 							>
 								<MenuIcon />
@@ -249,7 +249,7 @@ export default function Chat() {
 										label="Text"
 										variant="outlined"
 										inputRef={textRef}
-										className="w-full"
+										className="!w-full"
 									/>
 									<Button variant="contained" type="submit">
 										Send
