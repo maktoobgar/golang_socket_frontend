@@ -9,6 +9,10 @@
 
 - added docker compose and nginx configs to host frontend
 
+### Fixed
+
+- websocket address fixed to use address in .env file
+
 ## [1.0.0] - 2022-12-25
 
 ### Added

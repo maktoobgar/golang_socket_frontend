@@ -11,10 +11,15 @@ import TextField from "@mui/material/TextField";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import MenuIcon from "@mui/icons-material/Menu";
 import AddIcon from "@mui/icons-material/Add";
-import Backdrop from "@mui/material/Backdrop";
 import * as WebSocket from "websocket";
 import router from "next/router";
 import orderBy from "lodash/orderBy";
+import {
+	DialogActions,
+	DialogContent,
+	DialogContentText,
+	DialogTitle,
+} from "@mui/material";
 
 // =============== Components =============== //
 import ChatMessage from "@/components/ChatMessage";
@@ -25,12 +30,7 @@ import axios from "@/utils/axios";
 // =============== Types =============== //
 import RoomType from "@/types/room";
 import Dialog from "@mui/material/Dialog";
-import {
-	DialogActions,
-	DialogContent,
-	DialogContentText,
-	DialogTitle,
-} from "@mui/material";
+import ServerName from "@/types/server_name";
 
 interface Action {
 	method: "add" | "clear";
@@ -77,7 +77,7 @@ export default function Chat() {
 	const connect = (room: string) => {
 		if (room !== "") {
 			socket = new WebSocket.w3cwebsocket(
-				`ws://localhost:5000/rooms/${room}/name/${name}/ws`
+				`${ServerName.replace("http", "ws")}/rooms/${room}/name/${name}/ws`
 			);
 			socket.onopen = function () {
 				socket!.onmessage = (msg: WebSocket.IMessageEvent) => {

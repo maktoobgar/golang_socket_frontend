@@ -1,9 +1,10 @@
 // =============== Libraries =============== //
 import axios from "axios";
 
+// =============== Types =============== //
+import ServerName from "@/types/server_name";
+
 export default axios.create({
-	baseURL: process.env.NEXT_PUBLIC_BACKEND
-		? process.env.NEXT_PUBLIC_BACKEND
-		: "http://127.0.0.1:5000",
+	baseURL: ServerName,
 	timeout: 10000,
 });
