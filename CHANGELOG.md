@@ -42,6 +42,6 @@
 [semantic versioning]: https://semver.org/spec/v2.0.0.html -->
 
 <!-- Versions -->
-[unreleased]: https://github.com/maktoobgar/golang_socket_frontend/compare/v1.0.1...HEAD
-[1.0.1]: https://github.com/maktoobgar/golang_socket_frontend/compare/v1.0.1...v1.0.0
+[1.0.1]: https://github.com/maktoobgar/golang_socket_frontend/releases/tag/v1.0.1
 [1.0.0]: https://github.com/maktoobgar/golang_socket_frontend/releases/tag/v1.0.0
+[unreleased]: https://github.com/maktoobgar/golang_socket_frontend/compare/v1.0.1...HEAD
